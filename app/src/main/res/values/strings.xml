@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ ! Excerpted from "Hello, Android",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband4 for more book information.
+-->
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="assignment1_app_name">NUMAD17S-VikasChandrashekar</string>
+    <string name="long_app_name">Ultimate Tic Tac Toe</string>
+    <string name="action_settings">Settings</string>
+    <string name="restart_label">Restart</string>
+    <string name="main_menu_label">Main Menu</string>
+    <string name="declare_winner">%1$s is the winner</string>
+    <string name="continue_label">Continue</string>
+    <string name="new_game_label">New Game</string>
+    <string name="about_title">About Ultimate Tic Tac Toe</string>
+    <string name="assignment1_about_label">About</string>
+    <string name="dictionary_open_label">Dictionary</string>
+    <string name="dictionary_title">Test Dictionary</string>
+    <string name="dictionary_word_search">Word to Search</string>
+    <string name="dictionary_enter_text">Enter Word</string>
+    <string name="dictionary_clear">Clear</string>
+    <string name="dictionary_return">Return to menu</string>
+    <string name="dictionary_ack">Acknowledgements</string>
+    <string name="scroggle_open_label">Word Game</string>
+    <string name="communication_open_label">Communication</string>
+    <string name="two_player_game">Two Player Word Game</string>
+    <string name="scroggle_new_game">New Game</string>
+    <string name="scroggle_continue">Continue</string>
+    <string name="scroggle_title">Word Game</string>
+    <string name="dictionary_ack_content">  This word search software contains words compiled
+        from website <a href="http://wordlist.sourceforge.net/">http://wordlist.sourceforge.net</a>.
+        Text file taken from this website is divided alphabetically and then encoded using Huffman Encoding(
+        <a href="https://en.wikipedia.org/wiki/Huffman_coding">https://en.wikipedia.org/wiki/Huffman_coding</a>).
+        Encoded binary files are kept in res/raw folder and accessed depending on the first alphabet
+        of the word being searched. They are decoded and if the entered word matches a word
+        from the list then it is shown on screen with a beep.
+    </string>
+
+    <string name="dictionary_beep"> Beep sound file taken from <a href="http://soundbible.com/grab.php?id=1682&amp;type=mp3">http://soundbible.com/grab.php?id=1682&amp;type=mp3</a> website.
+    </string>
+
+     <string name="dictionary_acknowledgement"> Thanks to Prof. Stephen Intille for suggesting the idea
+         of encoding ASCII to binary and also the idea of using any encoding algorithm to compress the size of
+         the data stored.
+    </string>
+    <string name="ok_label">OK</string>
+    <string name="assignment1_error_label">Generate Error</string>
+    <string name="assignment1_app_title">Vikas Chandrashekar</string>
+    <string name="assignment1_exit_label">Exit</string>
+    <string name="assignment1_email">chandrashekar.v@husky.neu.edu</string>
+    <string name="assignment1_school">1st year MS</string>
+    <string name="assignment1_program">Computer Science</string>
+    <string name="scroggle_instructions_1">1) Phase 1 of the game has nine 3x3 grids
+        which are all seeded with 9 letter words. Goal is to find a word in each grid. Finding
+        nine letter word earns extra points.
+    </string>
+    <string name="scroggle_instructions_2">2) In each 3x3 grid word can be formed using adjacent letters
+        including diagonally adjacent letters and one cell can be selected only once.
+    </string>
+    <string name="scroggle_instructions_3">3) After time ends or submit is clicked player can select
+        one letter from each grid where word is found and proceed to phase 2.
+    </string>
+    <string name="scroggle_instructions_4">4) In phase 2 of the game a 3x3 grid is formed using
+        letters selected at the end of phase 1. Goal is to form words using adjacent letters. Each
+        letter can be selected multiple times except that same letter cannot be selected twice in a row.
+    </string>
+    <string name="scroggle_instructions_5">5) Phase 2 of the game gives five times the points as phase 1
+            but making same word or wrong words will deduct 30 points.
+    </string>
+
+    <string name="scroggle_ack_1">  This game has background image from
+        <a href="http://orig13.deviantart.net/fb06/f/2010/184/3/3/wood_by_renanluism.png">http://orig13.deviantart.net/fb06/f/2010/184/3/3/wood_by_renanluism.png</a>.
+    </string>
+
+    <string name="scroggle_ack_2"> Beep sound file taken from <a href="http://soundbible.com/grab.php?id=1682&amp;type=mp3">http://soundbible.com/grab.php?id=1682&amp;type=mp3</a> website.
+    </string>
+
+    <string name="scroggle_ack_3"> Background music is <a href="https://www.youtube.com/watch?v=tvQvpIy9JnA">https://www.youtube.com/watch?v=tvQvpIy9JnA</a>.
+    </string>
+
+    <string name="scroggle_ack_4"> Thanks to Prof. Stephen Intille for helping in various design aspects of the game
+        including seeding of words in 3x3 grid.
+    </string>
+
+    <string name="proj_ack_1">
+        This app uses\n
+        1. play-services-maps:10.2.0 for displaying the map\n
+        2. firebase-messaging:10.2.0 for communication between phones\n
+        3. firebase-database:10.2.0 for storing data\n
+        4. Google Places API for generating pin suggestions\n
+        5. App toolbar <a href="https://guides.codepath.com/android/Using-the-App-Toolbar"> https://guides.codepath.com/android/Using-the-App-Toolbar</a> \n
+        6. App previous dialog<a href="http://stackoverflow.com/questions/35732870/how-should-i-return-to-a-previous-dialog-from-another-one"> http://stackoverflow.com/questions/35732870/how-should-i-return-to-a-previous-dialog-from-another-one</a>  \n\n
+
+         This app is tested on\n
+        1. Motorola XT1052(Android 5.1, API 22)\n
+        2. Nexus 5(Android 6.0, API 23)\n
+        3. Nexus 5 API 16\n
+        4. Nexus 5 API 25\n
+        5. Kyocera C5155\n\n
+
+        Thanks to Prof. Stephen Intille for helping in refining the app idea\n
+        Thanks to Aditya Batheja for lending phone for testing\n
+        Thanks to Jojo Lee for helping with the app launcher icon\n
+    </string>
+
+
+
+
+        <string name="proj_description">
+        PinMe is a free location sharing application that connects you with your close friends and family.
+        You can create your own definition of the location and share with people who matters the most to you.\n\n
+        PinMe can also be a safety application. It is a tool for you to check on friends you follow and get an idea of what they are doing.
+        It also allows you to request people you follow to share their location. \n\n
+        NOTE: this application requires Internet connection and uses your location data\n\n
+        Features:\n
+        * Allow user to create a unique user name\n
+        * Request a permission to follow a person\n
+        * Contain an imported google map\n
+        * Use GPS sensor to indicate the location of the user\n
+        * Send out the location request by notification\n
+    </string>
+
+
+
+
+    <string name="about_text">\
+This game is played just like
+regular Tic Tac Toe with one difference: to win a tile
+you have to win a smaller game of Tic Tac Toe inside that tile.\n\
+\n\
+A tie happens when there are no further moves.
+In the case of a tie in a small board, that will count as a win for
+both sides in the larger game.
+</string>
+
+    <string name="quickstart_message">The Log Token button logs the Registration token to the log. The Send Notification Button sends the notification to the client device.</string>
+    <string name="send_notification">Send Notification</string>
+    <string name="log_token">Log Token</string>
+
+
+    <string name="msg_subscribed">Subscribed to news topic</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+    <string name="go_to_fcm_demo">FCM Demo</string>
+    <string name="go_to_realtime_database_demo">Realtime Database Demo</string>
+
+    <string name="username">User Name</string>
+    <string name="score">Score</string>
+
+    <string name="add5">Add 5</string>
+
+    <string name="multiplayer">Multiplayer Demo</string>
+    <string name="scroggle1">Player 1</string>
+    <string name="scroggle2">Player 2</string>
+</resources>

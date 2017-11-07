@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.neu.madcourse.vikaschandrashekar">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/assignment1_app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCe8uswox5bn8lTq1z-Dw_uUrpnC_lo-XY"/>
+
+        <activity
+            android:name=".assignment1.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".tictactoe.GameActivity"></activity>
+
+        <activity android:name=".tictactoe.TicTacToeMainActivity"></activity>
+
+        <activity
+            android:name=".assignment1.AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme"></activity>
+
+        <activity
+            android:name=".dictionary.DictionaryMain"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme"></activity>
+
+        <activity
+            android:name=".dictionary.Acknowledgements"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme"></activity>
+
+        <activity android:name=".scroggle.ScroggleMain"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme"></activity>
+
+        <activity android:name=".scroggle.MainGameActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme"></activity>
+
+        <activity android:name=".scroggle.PhaseTwo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme"></activity>
+
+        <activity android:name=".scroggle.FinalScore"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme"></activity>
+
+        <activity android:name=".scroggle.Instructions"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme"></activity>
+
+        <activity android:name=".scroggle.ScroggleAcknowledgement"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme"></activity>
+
+        <service android:name=".communication.WordGameMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".communication.WordGameInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <activity android:name=".communication.fcm.FCMActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".communication.FCMMain"
+            android:screenOrientation="portrait"></activity>
+
+        <activity android:name=".communication.database.RealtimeDatabaseActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".communication.TwoPlayerDemo"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".twoplayergame.MatchMaking"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".twoplayergame.TwoPlayerMainGameP1"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme"></activity>
+        <activity android:name=".twoplayergame.TwoPlayerMainGameP2"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme"></activity>
+
+        <activity android:name=".twoplayergame.TwoPlayerMain"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme"></activity>
+
+        <activity android:name=".twoplayergame.TwoPlayerAck"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme"></activity>
+
+        <activity android:name=".finalproject.activities.Description"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"
+            android:exported="true"></activity>
+
+        <activity android:name=".finalproject.activities.ProjectAcknowledgements"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1"></activity>
+
+        <activity android:name=".trickiestpart.activities.Trickiest"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme"
+            android:exported="true">
+        </activity>
+
+        <activity android:name=".finalproject.activities.ProjectMain"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="PROJECT_OPEN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".finalproject.activities.Registration"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme"
+            android:icon="@drawable/icon"
+            android:label="MAD17S-PinMe">
+            <intent-filter
+                android:label="MAD17S-PinMe">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

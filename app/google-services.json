@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "522673653442",
+    "firebase_url": "https://numad17s-vikaschandrashekar.firebaseio.com",
+    "project_id": "numad17s-vikaschandrashekar",
+    "storage_bucket": "numad17s-vikaschandrashekar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522673653442:android:74bac04706bb988a",
+        "android_client_info": {
+          "package_name": "edu.neu.madcourse.vikaschandrashekar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522673653442-63llfvaafcbb6d5bpa49jrle8db8sqm2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnMZKHr2on4BwCVv_Z8G6fmvqTni65s3s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

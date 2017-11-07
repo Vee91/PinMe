@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/wood">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/phase_two_fragment"
+                class="edu.neu.madcourse.vikaschandrashekar.scroggle.PhaseTwoFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/phase_two_fragment" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <Button
+                    android:id="@+id/addWords"
+                    android:text="Add Word"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:onClick="addWords"/>
+
+                <Button
+                    android:id="@+id/final_mute"
+                    android:text="Mute"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:onClick="finalMuteMusic"
+                    android:layout_toRightOf="@+id/addWords"/>
+
+                <Button
+                    android:id="@+id/final_submit"
+                    android:text="Finish"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:onClick="endGame"
+                    android:layout_toRightOf="@+id/final_mute"/>
+
+                <Button
+                    android:id="@+id/phase_two_pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pause"
+                    android:layout_below="@+id/addWords"/>
+
+                <TextView
+                    android:id="@+id/phase_two_timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/phase_two_pause"
+                    android:layout_below="@+id/addWords"/>
+
+                <TextView
+                    android:id="@+id/found"
+                    android:textStyle="bold"
+                    android:text="Words Found"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/phase_two_pause"/>
+
+                <TextView
+                    android:id="@+id/foundList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/found">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/final_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:background="@android:color/white"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/foundList"/>
+
+
+            </RelativeLayout>
+
+
+            <!-- Control fragment goes here... -->
+
+            <!--<fragment
+                android:id="@+id/fragment_game_controls"
+                class="edu.neu.madcourse.vikaschandrashekar.tictactoe.ControlFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_control"/>-->
+
+        </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/loggedIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/pin_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pinLocationProject"
+        android:text="Pin"
+        android:layout_toRightOf="@+id/loggedIn" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pin_location"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:clickable="true"
+        android:textColor="@color/blue_color"
+        android:onClick="pinHelp"
+        android:layout_alignBottom="@+id/loggedIn"
+        android:layout_toRightOf="@+id/pin_location"
+        android:layout_toEndOf="@+id/pin_location" />
+
+
+    <!--<TextView
+        android:id="@+id/pin_name_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/lat_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/lon_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>-->
+
+</RelativeLayout>

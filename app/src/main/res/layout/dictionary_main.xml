@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="@string/dictionary_word_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:id="@+id/word_to_search" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:layout_marginBottom="5dp"
+            android:hint="Enter Word"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/clear" />
+
+        <Button android:id="@+id/clear"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:text="@string/dictionary_clear"
+            android:onClick="clearSearch"
+            android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/returnToMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dictionary_return"
+            android:onClick="returnToMenu" />
+
+        <Button android:id="@+id/acknowledgement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dictionary_ack"
+            android:onClick="getAcknowledgements" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/foundWords"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+    </ListView>
+
+</LinearLayout>

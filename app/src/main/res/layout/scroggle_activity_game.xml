@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/wood">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/scroggle_fragment_game"
+            class="edu.neu.madcourse.vikaschandrashekar.scroggle.ScroggleGameFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/scroggle_fragment_game" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/prev"
+                android:text="Prev"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="getPrevTile"
+                android:layout_alignParentTop="true"/>
+
+            <Button
+                android:id="@+id/next"
+                android:text="Next"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="getNextTile"
+                android:layout_toRightOf="@+id/prev"/>
+
+            <Button
+                android:id="@+id/submitWords"
+                android:text="Submit"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="submitWords"
+                android:layout_toRightOf="@+id/next"/>
+
+            <Button
+                android:id="@+id/mute"
+                android:text="Mute"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="muteMusic"
+                android:layout_toRightOf="@+id/submitWords"/>
+
+            <Button
+                android:id="@+id/quit"
+                android:text="Quit"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:onClick="quit"
+                android:layout_toRightOf="@+id/mute"/>
+
+            <Button
+                android:id="@+id/pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pause"
+                android:layout_below="@+id/prev"/>
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/pause"
+                android:layout_below="@+id/next"/>
+
+            <TextView
+                android:id="@+id/found"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/timer"/>
+
+            <TextView
+                android:id="@+id/correctWords"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/found">
+            </TextView>
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:background="@android:color/white"
+                android:layout_below="@+id/correctWords"/>
+
+
+        </RelativeLayout>
+
+
+        <!-- Control fragment goes here... -->
+
+        <!--<fragment
+            android:id="@+id/fragment_game_controls"
+            class="edu.neu.madcourse.vikaschandrashekar.tictactoe.ControlFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_control"/>-->
+
+    </LinearLayout>
+
+    <include layout="@layout/thinking" />
+
+</FrameLayout>
+</ScrollView>

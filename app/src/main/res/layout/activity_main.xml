@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:baselineAligned="false"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/assignment1_about_label"
+            android:onClick="showAbout"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/assignment1_error_label"
+            android:onClick="generateError"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/long_app_name"
+            android:onClick="openTicTacToe" />
+
+        <Button android:id="@+id/dictionary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dictionary_open_label"
+            android:onClick="openDictionary"/>
+
+        <Button android:id="@+id/scroggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scroggle_open_label"
+            android:onClick="openScroggle"/>
+
+        <Button android:id="@+id/communication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/communication_open_label"
+            android:onClick="openCommunication"/>
+
+        <Button android:id="@+id/twogame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/two_player_game"
+            android:onClick="starTwoPlayerGame"/>
+
+        <Button
+            android:id="@+id/trick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trickiest Part"
+            android:onClick="trickiestPart"/>
+
+        <Button
+            android:id="@+id/proj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Final Project"
+            android:onClick="getFinalProj"/>
+
+        <Button android:id="@+id/exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/assignment1_exit_label"/>
+
+    </LinearLayout>
+</LinearLayout>

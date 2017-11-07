@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/scroggle_fragment_game_2p"
+                class="edu.neu.madcourse.vikaschandrashekar.twoplayergame.TwoPlayerGameFragmentP1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/scroggle_fragment_game" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/end_turn1"
+                    android:text="End Turn"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:onClick="endTurn"
+                    android:layout_alignParentTop="true"/>
+
+                <Button
+                    android:id="@+id/mute_2p_1"
+                    android:text="Mute"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:onClick="muteMusic"
+                    android:layout_toRightOf="@+id/end_turn1"/>
+
+                <Button
+                    android:id="@+id/quit_2p_1"
+                    android:text="Quit"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:onClick="quit"
+                    android:layout_toRightOf="@+id/mute_2p_1"/>
+
+                <TextView
+                    android:id="@+id/playMessage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/end_turn1"/>
+
+                <TextView
+                    android:id="@+id/statusMessage1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/playMessage1"/>
+
+                <TextView
+                    android:id="@+id/found_2p"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/correctWords_2p"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/found_2p">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/score_2p"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:background="@android:color/white"
+                    android:layout_below="@+id/statusMessage1"/>
+
+                <TextView
+                    android:id="@+id/winner_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:layout_below="@+id/score_2p"/>
+
+
+            </RelativeLayout>
+
+
+            <!-- Control fragment goes here... -->
+
+            <!--<fragment
+                android:id="@+id/fragment_game_controls"
+                class="edu.neu.madcourse.vikaschandrashekar.tictactoe.ControlFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_control"/>-->
+
+        </LinearLayout>
+
+        <include layout="@layout/thinking" />
+
+    </FrameLayout>
+</ScrollView>
