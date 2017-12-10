@@ -1,6 +1,6 @@
 # PinMe
 
-Location sharing app for android devices
+Location sharing app for android devices. APK/demo available on demand or can be built using the source code given.
 
 ## Design
 
